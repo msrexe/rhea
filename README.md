@@ -1,4 +1,7 @@
-# 🔥 Rhea - A Server Load Testing Tool
+# 🔥 Rhea
+- A Server Load Testing Tool
+
+[![Build Status](https://travis-ci.com/roerohan/rhea.svg?branch=master)](https://travis-ci.com/roerohan/rhea)
 
 Rhea is a powerful and easy-to-use command-line tool written in Rust for load testing servers. It allows you to simulate heavy concurrent traffic and analyze how your server responds under various loads. With Rhea, you can identify performance bottlenecks, test the scalability of your server, and ensure its stability even in high-traffic scenarios.
 
@@ -66,14 +69,5 @@ We welcome contributions to Rhea! To contribute, please follow the guidelines ou
 
 Rhea is open-source software licensed under the MIT License. See the LICENSE file for more details.
 
-## Acknowledgments
-
-We would like to express our gratitude to all the contributors who have made this project possible.
-
----
-
-Give Rhea a try, and let us know your feedback! If you encounter any issues or have ideas for improvements, feel free to open an issue on GitHub.
 
 Happy load testing!
-
-```
