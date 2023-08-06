@@ -2,6 +2,8 @@
 name = "rhea"
 version = "0.1.0"
 edition = "2021"
+description = "A server load testing tool"
+license = "MIT"
 
 [dependencies]
 reqwest = "0.11"
