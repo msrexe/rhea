@@ -51,9 +51,9 @@ rhea [OPTIONS] --url <URL> --requests <REQ_COUNT>
 
 - `--url <URL>`: The URL of the server you want to load test (required).
 
-- `--concurrency <CONCURRENCY>`: The number of concurrent users to simulate (default: 100).
+- `--concurrency <CONCURRENCY>`: The number of concurrent users to simulate (default: 1).
 
-- `--requests <REQUESTS>`: The total number of requests to send during the test (default: 1000).
+- `--requests <REQUESTS>`: The total number of requests to send during the test (default: 10).
 
 - `--method <METHOD>`: The HTTP method to use for the requests (default: GET).
 

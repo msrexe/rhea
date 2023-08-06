@@ -6,7 +6,7 @@ pub struct AppArgs {
     #[clap(short='u', long="url", required=true)]
     pub url: String,
 
-    #[clap(short='r', long="requests", required = true)]
+    #[clap(short='r', long="requests", required = true, default_value = "10")]
     pub req_count: u32,
 
     #[clap(short='m', long="method", default_value = "GET")]
