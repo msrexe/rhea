@@ -17,9 +17,13 @@ async fn main() -> Result<(), Box<dyn Error>> {
         args.headers,
     ).body(args.body);
 
+    let start = std::time::Instant::now();
+
     let result = client.start(req, args.threads, args.req_count).await;
-    print!("{}", result);
-    println!("\n\nLoad test completed.\n");
+
+    let duration = start.elapsed();
+
+    println!("\n\nDuration: {:?}\n\nResponse stats\n{}", duration, result);
 
     Ok(()) 
 }  
