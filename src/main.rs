@@ -5,6 +5,8 @@ use std::error::Error;
 use clap::Parser;
 use cli::AppArgs;
 
+const MAX_THREADS: u8 = 100;
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     let args = AppArgs::parse();
@@ -18,6 +20,10 @@ async fn main() -> Result<(), Box<dyn Error>> {
     ).body(args.body);
 
     let start = std::time::Instant::now();
+
+    if args.threads > MAX_THREADS {
+        return Err(format!("Max threads is {}", MAX_THREADS).into());
+    }
 
     let result = client.start(req, args.threads, args.req_count).await;
 
